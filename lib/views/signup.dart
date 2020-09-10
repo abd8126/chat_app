@@ -1,12 +1,12 @@
 import 'package:chat_app/widgets/widget.dart';
 import 'package:flutter/material.dart';
 
-class signup extends StatefulWidget {
+class SignUp extends StatefulWidget {
   @override
-  _signupState createState() => _signupState();
+  _SignUpState createState() => _SignUpState();
 }
 
-class _signupState extends State<signup> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +18,10 @@ class _signupState extends State<signup> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                TextField(
+                  style: simpleTextStyle(),
+                  decoration: textFieldInputDecoration("Username"),
+                ),
                 TextField(
                   style: simpleTextStyle(),
                   decoration: textFieldInputDecoration("E-mail"),
