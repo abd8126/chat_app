@@ -1,4 +1,5 @@
 import 'package:chat_app/views/signin.dart';
+import 'package:chat_app/views/signup.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Signin(),
+      home: SignUp(),
     );
   }
 }
